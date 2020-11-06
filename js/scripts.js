@@ -30,11 +30,18 @@ Pizza.prototype.cost = function() {
 // User Interface Logic---------
 
 $(document).ready(function(){
+
+  function deliveryPizza() {
+    if (delivery) {
+      return pizza.price += 7
+    }
+  }
   $("#pizza").submit(function(event) {
     event.preventDefault();
 
     const userToppings = $("#toppings").val();
     const userSize = $("#size").val();
+    const delivery = $("input:checkbox[name=delivery]:checked").val();
 
     let pizza = new Pizza(userToppings, userSize);
     pizza.cost();
