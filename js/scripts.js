@@ -30,6 +30,8 @@ $(document).ready(function(){
 
     let pizza = new Pizza(userToppings, userSize);
     pizza.cost();
-
+    console.log(pizza);
+  $("#orderCompleted").show();
+  $("#information").text(`Your ${userSize} pizza with ${userToppings} has been ordered your total is $${pizza.price}`)
   });
 });
