@@ -8,6 +8,15 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+## Specs/test
+
+| Description cost()                                                  	| Input                      	| Output 	|
+|---------------------------------------------------------------------	|----------------------------	|--------	|
+| test:"It should determine the cost for a peperonni and small pizza" 	| cost("peperonni", "small") 	| 15     	|
+| test:"It should determine the cost for a peperonni and large pizza" 	| cost("peperonni", "large") 	| 20     	|
+| test:"It should determine the cost for a cheese and small pizza"    	| cost("cheese", "small")    	| 10     	|
+| test:"It should determine the cost for a cheese and large pizza"    	| cost("cheese", "large")    	| 15     	|
+
 ## Setup/Installation Requirements
 
 * _Go to GitHub_
