@@ -18,9 +18,9 @@ function Pizza(toppings, size) {
 // this.price = 20
 
 Pizza.prototype.cost = function() {
-  if (this.toppings == "pepperoni" && this.size == "small") {
+  if (this.toppings === "pepperoni" && this.size === "small") {
     return this.price += 15;
-  } else {
-    return this.price;
+  } else if (this.toppings === "pepperoni" && this.size === "large"){
+    return this.price += 20;
   }
 }
