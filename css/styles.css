@@ -22,4 +22,6 @@ a:hover{
   
 }
 
-git 
+#orderCompleted {
+  display: none;
+}

@@ -22,7 +22,14 @@ Pizza.prototype.cost = function() {
 // User Interface Logic---------
 
 $(document).ready(function(){
-  $().submit(function(event) {
+  $("#pizza").submit(function(event) {
     event.preventDefault();
+
+    const userToppings = $("#toppings").val();
+    const userSize = $("#size").val();
+
+    let pizza = new Pizza(userToppings, userSize);
+    pizza.cost();
+
   });
 });
