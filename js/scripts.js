@@ -2,3 +2,8 @@
 //test: "It should create an order of pizza with toppings and size"
 //code: let pizzaOrder = new Pizza(topping, size);
 //Expect: pizzaOrder("peperonni", "small");
+
+function Pizza (toppings, size) {
+  this.toppings = toppings;
+  this.size = size;
+}
