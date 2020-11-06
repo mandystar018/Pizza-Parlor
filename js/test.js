@@ -12,3 +12,5 @@
 //price = 10
 //else if topping "cheese" and size "large"
 //price = 17
+//else no input from the user
+// Enter a topping and size

@@ -1,3 +1,4 @@
+//Business Logic-------
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
@@ -17,3 +18,11 @@ Pizza.prototype.cost = function() {
     return "Enter a topping and size"
   }
 }
+
+// User Interface Logic---------
+
+$(document).ready(function(){
+  $().submit(function(event) {
+    event.preventDefault();
+  });
+});
