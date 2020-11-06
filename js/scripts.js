@@ -6,16 +6,24 @@ function Pizza(toppings, size) {
 }
 
 Pizza.prototype.cost = function() {
-  if (this.toppings === "pepperoni" && this.size === "small") {
+  if (this.toppings === "pepperoni" && this.size === "small" || this.toppings === "sausage" && this.size === "small") {
     return this.price += 15;
-  } else if (this.toppings === "pepperoni" && this.size === "large") {
+  } else if (this.toppings === "pepperoni" && this.size === "medium" || this.toppings === "sausage" && this.size === "medium") {
     return this.price += 20;
+  } else if (this.toppings === "pepperoni" && this.size === "large" || this.toppings === "sausage" && this.size === "large") {
+    return this.price += 25;
   } else if (this.toppings === "cheese" && this.size === "small") {
     return this.price += 10;
+  } else if (this.toppings === "cheese" && this.size === "medium") {
+    return this.price += 15;
   } else if (this.toppings === "cheese" && this.size === "large") {
     return this.price += 17;
+  } else if (this.toppings === "veggies" && this.size === "small" || this.toppings === "double-cheese" && this.size === "small") {
+    return this.price += 13;
+  } else if (this.toppings === "veggies" && this.size === "medium" || this.toppings === "double-cheese" && this.size === "medium") {
+    return this.price += 16;
   } else {
-    return "Enter a topping and size"
+    return this.price += 21;
   }
 }
 
