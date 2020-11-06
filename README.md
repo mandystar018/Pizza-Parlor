@@ -10,13 +10,22 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Specs/test
 
-| Description cost()                                                  	| Input                      	| Output                   	|
-|---------------------------------------------------------------------	|----------------------------	|--------------------------	|
-| Test: "It should determine the cost for a peperonni and small pizza" 	| cost("peperonni", "small") 	| 15                       	|
-| Test: "It should determine the cost for a peperonni and large pizza" 	| cost("peperonni", "large") 	| 20                       	|
-| Test: "It should determine the cost for a cheese and small pizza"    	| cost("cheese", "small")    	| 10                       	|
-| Test: "It should determine the cost for a cheese and large pizza"    	| cost("cheese", "large")    	| 17                       	|
-| Test: "If the user does not choose toppings or pizza"                	| cost()                     	| Enter a topping and size 	|
+| Description cost()                                                       	| Input                           	| Output 	|
+|--------------------------------------------------------------------------	|---------------------------------	|--------	|
+| test:"It should determine the cost for a peperoni and small pizza"       	| cost("pepperoni", "small")      	| 15     	|
+| test:"It should determine the cost for a peperoni and medium pizza"      	| cost("pepperoni", "medium")     	| 20     	|
+| test:"It should determine the cost for a pepperoni and large pizza"      	| cost("pepperoni", "large")      	| 25     	|
+| test:"It should determine the cost for a cheese and small pizza"         	| cost("cheese", "small")         	| 10     	|
+| test:"It should determine the cost for a cheese and medium pizza"        	| cost("cheese", "medium")        	| 15     	|
+| test:"It should determine the cost for a cheese and large pizza"         	| cost("cheese", "large")         	| 17     	|
+| test:"It should determine the cost for a sausage and small pizza"        	| cost("sausage", "small")        	| 15     	|
+| test:"It should determine the cost for a sausage and medium pizza"       	| cost("sausage", "medium")       	| 20     	|
+| test:"It should determine the cost for a sausage and large pizza"        	| cost("sausage", "large")        	| 25     	|
+| test:"It should determine the cost for a veggies and small pizza"        	| cost("vegguies", "small")       	| 13     	|
+| test:"It should determine the cost for a veggies and medium pizza"       	| cost("veggies", "medium")       	| 16     	|
+| test:"It should determine the cost for a veggies and large pizza"        	| cost("veggies", "large")        	| 21     	|
+| test:"It should determine the cost for a double-cheese and medium pizza" 	| cost("double-cheese", "medium") 	| 16     	|
+| test:"It should determine the cost for a double-cheese and large pizza"  	| cost("double-cheese", "large")  	| 21     	|
 
 ## Setup/Installation Requirements
 
