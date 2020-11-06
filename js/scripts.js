@@ -22,5 +22,7 @@ Pizza.prototype.cost = function() {
     return this.price += 15;
   } else if (this.toppings === "pepperoni" && this.size === "large"){
     return this.price += 20;
+  } else if (this.toppings === "cheese" && this.size === "small") {
+    return this.price += 10;
   }
 }
