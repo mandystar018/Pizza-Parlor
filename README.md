@@ -12,8 +12,8 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 | Description cost()                                                  	| Input                      	| Output 	|
 |---------------------------------------------------------------------	|----------------------------	|--------	|
-| test:"It should determine the cost for a peperonni and small pizza" 	| cost("peperonni", "small") 	| 15     	|
-| test:"It should determine the cost for a peperonni and large pizza" 	| cost("peperonni", "large") 	| 20     	|
+| test:"It should determine the cost for a pepperoni and small pizza" 	| cost("pepperoni", "small") 	| 15     	|
+| test:"It should determine the cost for a pepperoni and large pizza" 	| cost("pepperoni", "large") 	| 20     	|
 | test:"It should determine the cost for a cheese and small pizza"    	| cost("cheese", "small")    	| 10     	|
 | test:"It should determine the cost for a cheese and large pizza"    	| cost("cheese", "large")    	| 15     	|
 
