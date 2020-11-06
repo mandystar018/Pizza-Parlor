@@ -3,11 +3,10 @@
 //code: let pizzaOrder = new Pizza(topping, size);
 //Expect: pizzaOrder("peperonni", "small");
 
-function Pizza (toppings, size) {
+
+function Order(toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  this.pizza = [];
-  this.price = 0;
 }
 
 //cost(pizza)
@@ -17,8 +16,11 @@ function Pizza (toppings, size) {
 // else if toppings === "pepperoni" and size === "large"
 // this.price = 20
 
-  Pizza.prototype.cost = function() {
-    if (this.toppings === "pepperoni" && this.toppings === "small")
-    this.price = 15;
-    this.pizza.push(pizza);
+Order.prototype.cost = function() {
+  let price = 0;
+  if (this.toppings === "pepperoni" && this.toppings === "small") {
+    return (price + 15);
+  } else {
+    return price;
   }
+}
