@@ -5,3 +5,19 @@
 li {
   margin: 50px;
 }
+
+a {
+  color: white;
+  font-size: 30px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: firebrick;
+}
+
+#menu {
+  font-size: 70px;
+  margin-left: 700px;
+  
+}
