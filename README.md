@@ -26,6 +26,8 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | test:"It should determine the cost for a veggies and large pizza"        	| cost("veggies", "large")        	| 21     	|
 | test:"It should determine the cost for a double-cheese and medium pizza" 	| cost("double-cheese", "medium") 	| 16     	|
 | test:"It should determine the cost for a double-cheese and large pizza"  	| cost("double-cheese", "large")  	| 21     	|
+| Description deliveryPizza()                                              	|                                 	|        	|
+| test: "If the user check delivery it should add to the total cost"       	| deliveryPizza()                 	| +7     	|
 
 ## Setup/Installation Requirements
 

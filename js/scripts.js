@@ -31,21 +31,27 @@ Pizza.prototype.cost = function() {
 
 $(document).ready(function(){
 
-  function deliveryPizza() {
-    if (delivery) {
-      return pizza.price += 7
-    }
-  }
+  $("#deliveryPizza").click(function(){
+    $("#address").toggle();
+  });
+  
   $("#pizza").submit(function(event) {
     event.preventDefault();
-
+    
     const userToppings = $("#toppings").val();
     const userSize = $("#size").val();
     const delivery = $("input:checkbox[name=delivery]:checked").val();
+    
+    function deliveryPizza() {
+      if (delivery) {
+        return pizza.price += 7
+      }
+    }
 
     let pizza = new Pizza(userToppings, userSize);
     pizza.cost();
-    console.log(pizza);
+    deliveryPizza();
+
   $("#orderCompleted").show();
   $("#information").text(`Your ${userSize} pizza with ${userToppings} has been ordered your total is $${pizza.price}`)
   });

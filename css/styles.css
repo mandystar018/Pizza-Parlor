@@ -25,3 +25,7 @@ a:hover{
 #orderCompleted {
   display: none;
 }
+
+#address {
+  display: none;
+}
