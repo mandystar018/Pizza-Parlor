@@ -22,3 +22,7 @@
 //price = 16;
 //else if topping "veggies" and size "large" or if topping "double-cheese" and size "large"
 //price = 21
+
+//deliveryPizza()
+//if delivery true
+//price + 7

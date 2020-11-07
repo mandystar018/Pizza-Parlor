@@ -1,9 +1,6 @@
 .nav {
   background-color: black;
-}
-
-li {
-  margin: 50px;
+  padding: 50px;
 }
 
 a {
@@ -16,16 +13,14 @@ a:hover{
   color: firebrick;
 }
 
-#menu {
-  font-size: 70px;
-  margin-left: 700px;
-  
-}
-
 #orderCompleted {
   display: none;
 }
 
 #address {
   display: none;
+}
+
+li {
+  margin: 50px;
 }
