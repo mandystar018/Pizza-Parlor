@@ -1,8 +1,9 @@
 #banner {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: black;
+  font-family: 'Goldman', cursive;
 }
 
   body{
@@ -13,8 +14,9 @@
 
 .nav {
   background-color: black;
-  padding-left: 42%;
-  padding-right: 42%;
+  padding-left: 40%;
+  padding-right: 40%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -29,6 +31,15 @@ a:hover{
 
 #orderCompleted {
   display: none;
+  padding-bottom: 50px;
+  font-family: 'Goldman', cursive;
+  font-weight: 500;
+}
+
+#information {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #address {
@@ -37,13 +48,22 @@ a:hover{
 
 #pizza {
   display: none;
+  padding: 50px;
+}
+
+#options {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
 #menu {
   display: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h5 {
+  font-family: 'Goldman', cursive;
   color: rgb(255, 255, 255);
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
