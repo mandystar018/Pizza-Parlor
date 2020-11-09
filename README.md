@@ -32,7 +32,7 @@ _This is a pizza parlor add where you can choose your toppings and size for a pi
 ## Setup/Installation Requirements
 
 #### View Online
-* _To view my project visit:_
+* _To view my project visit:https://mandystar018.github.io/Pizza-parlor/_
 
 #### Open Locally
 1. _Go to my GitHub mandystar018_
