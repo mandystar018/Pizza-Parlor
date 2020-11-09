@@ -1,6 +1,13 @@
+#banner {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .nav {
   background-color: black;
-  padding: 50px;
+  padding-left: 42%;
+  padding-right: 42%;
 }
 
 a {
@@ -19,8 +26,4 @@ a:hover{
 
 #address {
   display: none;
-}
-
-li {
-  margin: 50px;
 }

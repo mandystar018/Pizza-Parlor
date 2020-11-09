@@ -8,117 +8,163 @@
     <title>Flying Pizza</title>
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <ul class="nav">
-          <li class="active">
-            <a href="#home">Flying Pizza</a>
-          </li>
-          <li><a id="menu" href="#menu">Menu</a></li>
-          <li><a id="order" href="#order">Order</a></li>
-        </ul>
-      </nav>
-      <div id="options" class="container">
-        <form id="pizza">
-          <h4>Select your Toppings</h4>
-          <select class="form-control" id="toppings" required>
-            <option disabled selected value> -- select an option -- </option>
-            <option value="pepperoni">Pepperoni</option>
-            <option value="cheese">Cheese</option>
-            <option value="veggies">Veggies</option>
-            <option value="sausage">Italian sausage</option>
-            <option value="double-cheese">Double Cheese</option>
-          </select>
-          <h4>Select your size:</h4>
-          <select class="form-control" id="size" required>
-            <option disabled selected value> -- select an option -- </option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
+    <div id="banner">
+      <h1 id="flyingpizza">Flying Pizza</h1>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" id="menu" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="order" href="#order">Order</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="options" class="container">
+      <form id="pizza">
+        <h4>Select your Toppings</h4>
+        <select class="form-control" id="toppings" required>
+          <option disabled selected value> -- select an option -- </option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="cheese">Cheese</option>
+          <option value="veggies">Veggies</option>
+          <option value="sausage">Italian sausage</option>
+          <option value="double-cheese">Double Cheese</option>
+        </select>
+        <h4>Select your size:</h4>
+        <select class="form-control" id="size" required>
+          <option disabled selected value> -- select an option -- </option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <div class="form-group">
+          <input type="checkbox" name="delivery" id="deliveryPizza" value="delivery" class="form-check-input">
+          <label class="form-check-label" for="delivery">Delivery for only $7</label>
+        </div>
+        <div id="address">
           <div class="form-group">
-            <input type="checkbox" name="delivery" id="deliveryPizza" value="delivery" class="form-check-input">
-            <label class="form-check-label" for="delivery">Delivery for only $7</label>
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
-          <div id="address">
-            <div class="form-group">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option disabled selected value> -- select an option -- </option>
-                  <option value="AL">Alabama</option>
-                  <option value="AK">Alaska</option>
-                  <option value="AZ">Arizona</option>
-                  <option value="AR">Arkansas</option>
-                  <option value="CA">California</option>
-                  <option value="CO">Colorado</option>
-                  <option value="CT">Connecticut</option>
-                  <option value="DE">Delaware</option>
-                  <option value="DC">District Of Columbia</option>
-                  <option value="FL">Florida</option>
-                  <option value="GA">Georgia</option>
-                  <option value="HI">Hawaii</option>
-                  <option value="ID">Idaho</option>
-                  <option value="IL">Illinois</option>
-                  <option value="IN">Indiana</option>
-                  <option value="IA">Iowa</option>
-                  <option value="KS">Kansas</option>
-                  <option value="KY">Kentucky</option>
-                  <option value="LA">Louisiana</option>
-                  <option value="ME">Maine</option>
-                  <option value="MD">Maryland</option>
-                  <option value="MA">Massachusetts</option>
-                  <option value="MI">Michigan</option>
-                  <option value="MN">Minnesota</option>
-                  <option value="MS">Mississippi</option>
-                  <option value="MO">Missouri</option>
-                  <option value="MT">Montana</option>
-                  <option value="NE">Nebraska</option>
-                  <option value="NV">Nevada</option>
-                  <option value="NH">New Hampshire</option>
-                  <option value="NJ">New Jersey</option>
-                  <option value="NM">New Mexico</option>
-                  <option value="NY">New York</option>
-                  <option value="NC">North Carolina</option>
-                  <option value="ND">North Dakota</option>
-                  <option value="OH">Ohio</option>
-                  <option value="OK">Oklahoma</option>
-                  <option value="OR">Oregon</option>
-                  <option value="PA">Pennsylvania</option>
-                  <option value="RI">Rhode Island</option>
-                  <option value="SC">South Carolina</option>
-                  <option value="SD">South Dakota</option>
-                  <option value="TN">Tennessee</option>
-                  <option value="TX">Texas</option>
-                  <option value="UT">Utah</option>
-                  <option value="VT">Vermont</option>
-                  <option value="VA">Virginia</option>
-                  <option value="WA">Washington</option>
-                  <option value="WV">West Virginia</option>
-                  <option value="WI">Wisconsin</option>
-                  <option value="WY">Wyoming</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
             </div>
           </div>
-          <button id="order" class="btn-sm btn-primary" type="submit">Order</button>
-        </form>
-      </div>
+        </div>
+        <button id="order" class="btn-sm btn-primary" type="submit">Order</button>
+      </form>
       <div id="orderCompleted" class="container">
         <h2>Order Completed!</h2>
         <div id="information"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Ninja Turtle</h5>
+            <small>$15</small>
+          </div>
+          <p class="mb-1">Pepperoni, Mozzarella cheese</p>
+          <small class="text-muted">Medium $20, Large $25</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">The plain Jane</h5>
+            <small class="text-muted">$10</small>
+          </div>
+          <p class="mb-1">Just Mozzarella cheese</p>
+          <small class="text-muted">Medium $15, Large $17</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">The Budha</h5>
+            <small>$13</small>
+          </div>
+          <p class="mb-1">Vegetables: Mushroom, Olives, Peppers and Onions</p>
+          <small class="text-muted">Medium $16, Large $21</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Super Mario</h5>
+            <small class="text-muted">$15</small>
+          </div>
+          <p class="mb-1">Italian Sausage and Mozzarella cheese</p>
+          <small class="text-muted">Medium $20, Large $25</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Flying Pizza</h5>
+            <small>$13</small>
+          </div>
+          <p class="mb-1">Secret Ingredients</p>
+          <small class="text-muted">Medium $16, Large $21</small>
+        </a>
       </div>
     </div>
   </body>
