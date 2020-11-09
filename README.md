@@ -21,11 +21,11 @@ _This is a pizza parlor add where you can choose your toppings and size for a pi
 | test:"It should determine the cost for a sausage and small pizza"        	| cost("sausage", "small")        	| 15     	|
 | test:"It should determine the cost for a sausage and medium pizza"       	| cost("sausage", "medium")       	| 20     	|
 | test:"It should determine the cost for a sausage and large pizza"        	| cost("sausage", "large")        	| 25     	|
-| test:"It should determine the cost for a veggies and small pizza"        	| cost("vegguies", "small")       	| 13     	|
+| test:"It should determine the cost for a veggies and small pizza"        	| cost("veggies", "small")       	| 13     	|
 | test:"It should determine the cost for a veggies and medium pizza"       	| cost("veggies", "medium")       	| 16     	|
 | test:"It should determine the cost for a veggies and large pizza"        	| cost("veggies", "large")        	| 21     	|
-| test:"It should determine the cost for a double-cheese and medium pizza" 	| cost("double-cheese", "medium") 	| 16     	|
-| test:"It should determine the cost for a double-cheese and large pizza"  	| cost("double-cheese", "large")  	| 21     	|
+| test:"It should determine the cost for a secret ingredients and medium pizza" 	| cost("secret-ingredients", "medium") 	| 16     	|
+| test:"It should determine the cost for a secret ingredients large pizza"  	| cost("secret-ingredients", "large")  	| 21     	|
 | Description deliveryPizza()                                              	|                                 	|        	|
 | test: "If the user check delivery it should add to the total cost"       	| deliveryPizza()                 	| +7     	|
 

@@ -18,9 +18,9 @@ Pizza.prototype.cost = function() {
     return this.price += 15;
   } else if (this.toppings === "cheese" && this.size === "large") {
     return this.price += 17;
-  } else if (this.toppings === "veggies" && this.size === "small" || this.toppings === "double-cheese" && this.size === "small") {
+  } else if (this.toppings === "veggies" && this.size === "small" || this.toppings === "secret-ingredients" && this.size === "small") {
     return this.price += 13;
-  } else if (this.toppings === "veggies" && this.size === "medium" || this.toppings === "double-cheese" && this.size === "medium") {
+  } else if (this.toppings === "veggies" && this.size === "medium" || this.toppings === "secret-ingredients" && this.size === "medium") {
     return this.price += 16;
   } else {
     return this.price += 21;

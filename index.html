@@ -11,17 +11,17 @@
   <body>
     <div id="banner">
       <h1 id="flyingPizza">Flying Pizza</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="menuBanner" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="orderBanner" href="#order">Order</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" id="menuBanner" href="#menu">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" id="orderBanner" href="#order">Order</a>
-        </li>
-      </ul>
-    </nav>
     <div id="options" class="container">
       <form id="pizza">
         <h4>Select your Toppings</h4>
@@ -31,7 +31,7 @@
           <option value="cheese">The plain Jane</option>
           <option value="veggies">The Budha</option>
           <option value="sausage">Super Mario</option>
-          <option value="double-cheese">Flying Pizza</option>
+          <option value="secret-ingredients">Flying Pizza</option>
         </select>
         <h4>Select your size:</h4>
         <select class="form-control" id="size" required>
