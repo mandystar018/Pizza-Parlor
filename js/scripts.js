@@ -34,6 +34,13 @@ $(document).ready(function(){
   $("#deliveryPizza").click(function(){
     $("#address").toggle();
   });
+  $("#menuBanner").click(function() {
+    $("#menu").slideDown();
+    });
+  $("#orderBanner").click(function() {
+    $("#pizza").slideDown();
+  });
+  
   
   $("#pizza").submit(function(event) {
     event.preventDefault();
@@ -51,7 +58,6 @@ $(document).ready(function(){
     let pizza = new Pizza(userToppings, userSize);
     pizza.cost();
     deliveryPizza();
-
   $("#orderCompleted").show();
   $("#information").text(`Your ${userSize} pizza with ${userToppings} has been ordered your total is $${pizza.price}`)
   });

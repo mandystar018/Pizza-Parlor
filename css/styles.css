@@ -1,7 +1,14 @@
 #banner {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+}
+
+  body{
+  background-image: url("../img/pizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav {
@@ -26,4 +33,61 @@ a:hover{
 
 #address {
   display: none;
+}
+
+#pizza {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+h5 {
+  color: rgb(255, 255, 255);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 25px #7208eb, 0 0 20px #7208eb, 0 0 30px #7208eb, 0 0 40px #7208eb, 0 0 50px #7208eb;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+  }
+}
+
+#flying {
+  color: rgb(255, 255, 255);
+  -webkit-animation: pizza 1s ease-in-out infinite alternate;
+  -moz-animation: pizza 1s ease-in-out infinite alternate;
+  animation: pizza 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes pizza{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #027402, 0 0 30px #027402, 0 0 40px #027402, 0 0 40px #027402, 0 0 50px #027402;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 20px #071ef1, 0 0 20px #071ef1, 0 0 30px #071ef1, 0 0 40px #071ef1, 0 0 40px #071ef1, 0 0 50px #071ef1;
+  }
+}
+
+#flyingPizza {
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  -webkit-animation: banner 1s ease-in-out infinite alternate;
+  -moz-animation: banner 1s ease-in-out infinite alternate;
+  animation: banner 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes banner{
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e90606, 0 0 50px #e90606, 0 0 60px #e90606, 0 0 70px #e90606, 0 0 80px #e90606;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #790404, 0 0 40px #790404, 0 0 50px #790404, 0 0 60px #790404, 0 0 70px #790404, 0 0 80px #790404;
+  }
 }
